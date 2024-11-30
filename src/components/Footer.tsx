@@ -34,21 +34,21 @@ export default function Footer() {
 
   return (
     <footer className="bg-black text-white py-16">
-      <div className="container mx-auto px-8">
+      <div className="container mx-auto px-4 sm:px-8">
         {/* Main Content */}
-        <div className="mb-20 flex justify-between items-start">
-          <div className="max-w-2xl">
-            <h2 className="text-white text-5xl font-black uppercase mb-4 tracking-wide" style={{ fontFamily: 'var(--font-redhat)', letterSpacing: '-2px' }}>
+        <div className="mb-20 flex flex-col lg:flex-row justify-between items-center lg:items-start gap-8">
+          <div className="max-w-2xl text-center lg:text-left">
+            <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl font-black uppercase mb-4 tracking-wide" style={{ fontFamily: 'var(--font-redhat)', letterSpacing: '-2px' }}>
               Start your property<br />journey now!
             </h2>
-            <p className="text-gray-400">
+            <p className="text-gray-400 text-sm sm:text-base">
               Take the first step towards finding your dream home or perfect investment. Our
               expert team is here to guide you through every stage of your real estate journey.
             </p>
           </div>
 
           {/* Rotating Circle Logo */}
-          <div className="relative w-32 h-32 flex-shrink-0 group">
+          <div className="relative w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0 group">
             <div className="absolute inset-0 border-2 border-[#7FFF00] rounded-full animate-spin-slow group-hover:bg-[#7FFF00] transition-colors duration-30">
               <svg className="w-full h-full" viewBox="0 0 100 100">
                 <defs>
@@ -62,7 +62,7 @@ export default function Footer() {
               </svg>
             </div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <svg className="w-8 h-8 text-[#7FFF00] group-hover:text-black transition-colors duration-300 transform group-hover:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6 sm:w-8 sm:h-8 text-[#7FFF00] group-hover:text-black transition-colors duration-300 transform group-hover:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7l4-4m0 0l4 4m-4-4v18" />
               </svg>
             </div>
@@ -71,14 +71,14 @@ export default function Footer() {
 
         {/* Contact Information */}
         <div className="border-t border-gray-800 py-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-gray-400" style={{ fontFamily: 'var(--font-redhat)' }}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8 text-center md:text-left">
+            <div className="text-gray-400 text-sm sm:text-base" style={{ fontFamily: 'var(--font-redhat)' }}>
               123 Elm Street, Suite 456 Cityville, State 78901<br />United States
             </div>
-            <div className="text-gray-400 md:text-center" style={{ fontFamily: 'var(--font-redhat)' }}>
+            <div className="text-gray-400 text-sm sm:text-base md:text-center" style={{ fontFamily: 'var(--font-redhat)' }}>
               +1 (234) 567 - 8901
             </div>
-            <div className="text-gray-400 md:text-right" style={{ fontFamily: 'var(--font-redhat)' }}>
+            <div className="text-gray-400 text-sm sm:text-base md:text-right" style={{ fontFamily: 'var(--font-redhat)' }}>
               hello@millennial.com
             </div>
           </div>
@@ -86,25 +86,26 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6 sm:gap-8">
             {/* Logo */}
             <div>
               <Image 
                 src="/logo.svg"
                 alt="Millennial Logo"
-                width={108}
-                height={28}
+                width={90}
+                height={24}
+                className="w-24 sm:w-[108px]"
                 priority
               />
             </div>
 
             {/* Navigation */}
-            <nav className="flex flex-wrap justify-center gap-8" style={{ fontFamily: 'var(--font-redhat)' }}>
+            <nav className="flex flex-wrap justify-center gap-4 sm:gap-8" style={{ fontFamily: 'var(--font-redhat)' }}>
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-white hover:text-[#7FFF00] transition-colors duration-200"
+                  className="text-white text-sm sm:text-base hover:text-[#7FFF00] transition-colors duration-200"
                 >
                   {item.name}
                 </Link>
@@ -112,7 +113,7 @@ export default function Footer() {
             </nav>
 
             {/* Social Media Icons */}
-            <div className="flex gap-6">
+            <div className="flex gap-4 sm:gap-6">
               {socialMedia.map((item) => (
                 <Link
                   key={item.name}
@@ -120,7 +121,7 @@ export default function Footer() {
                   className="text-white hover:text-[#7FFF00] transition-colors duration-200"
                 >
                   <span className="sr-only">{item.name}</span>
-                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d={item.icon} />
                   </svg>
                 </Link>

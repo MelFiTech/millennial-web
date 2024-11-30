@@ -52,7 +52,7 @@ export default function Header() {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 w-full px-8 py-4 flex justify-between items-center z-50 transition-all duration-300 ${
+      <header className={`fixed top-0 left-0 w-full px-4 sm:px-8 py-4 flex justify-between items-center z-50 transition-all duration-300 ${
         hasScrolled ? 'bg-black/80 backdrop-blur-sm' : 'bg-gradient-to-b from-black/80 to-transparent'
       } ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
         {/* Logo */}
@@ -60,8 +60,9 @@ export default function Header() {
           <Image 
             src="/logo.svg"
             alt="Logo"
-            width={217}
-            height={56}
+            width={150}
+            height={39}
+            className="w-[150px] sm:w-[217px]"
             priority
           />
         </Link>
@@ -98,26 +99,26 @@ export default function Header() {
         <div className="h-full flex flex-col items-center justify-center gap-8">
           <Link 
             href="/" 
-            className="text-white text-6xl font-bold hover:scale-110 transition-transform font-redhat tracking-[-2px]"
+            className="text-white text-4xl sm:text-6xl font-bold hover:scale-110 transition-transform font-redhat tracking-[-2px]"
             onClick={() => setIsMenuOpen(false)}
           >
             Home
           </Link>
           <button 
             onClick={() => scrollToSection('whatwedo')}
-            className="text-white text-6xl font-bold hover:scale-110 transition-transform font-redhat tracking-[-2px]"
+            className="text-white text-4xl sm:text-6xl font-bold hover:scale-110 transition-transform font-redhat tracking-[-2px]"
           >
             About
           </button>
           <button 
             onClick={() => scrollToSection('projects')}
-            className="text-white text-6xl font-bold hover:scale-110 transition-transform font-redhat tracking-[-2px]"
+            className="text-white text-4xl sm:text-6xl font-bold hover:scale-110 transition-transform font-redhat tracking-[-2px]"
           >
             Properties
           </button>
           <Button 
             text="CONTACT US" 
-            className="mt-8 !border-white !text-white hover:!bg-white hover:!text-black"
+            className="mt-8 !border-white !text-white hover:!bg-white hover:!text-black text-sm sm:text-base"
           />
         </div>
       </div>

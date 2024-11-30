@@ -31,7 +31,7 @@ export default function Hero() {
       {/* Hero Content */}
       <div className="relative h-full flex flex-col items-center justify-end pb-16">
         <div className="container mx-auto px-8 text-center">
-          <h2 className="text-white text-[4.5rem] leading-[1.1] font-bold tracking-tight font-fraunces mb-5">
+          <h2 className="text-white text-[2rem] md:text-[3rem] lg:text-[4.5rem] leading-[1.1] font-bold tracking-tight font-fraunces mb-5">
             DISCOVER YOUR DREAM<br />HOME TODAY
           </h2>
         </div>
