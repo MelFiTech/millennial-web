@@ -766,11 +766,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:^20":
-  version: 20.17.8
-  resolution: "@types/node@npm:20.17.8"
+  version: 20.17.9
+  resolution: "@types/node@npm:20.17.9"
   dependencies:
     undici-types: ~6.19.2
-  checksum: c963c363bda5ade3d60b66eaeb1cf809e6a333fdd08cc40120bb86d112b58a667893d23b02cb9876ba69619214384c08e60b7dd0718ca404e954cf2ce6b24840
+  checksum: 2fc67ba937d2c4e7a52f0ccf71b8b4c616dcfa1ad6cd5a726582fd3cbf4f409c2eb44595592580f782c2ade05f8130df072dd04ac064fe150cfcd7849e643500
   languageName: node
   linkType: hard
 
@@ -2254,7 +2254,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-intrinsic@npm:^1.1.3, get-intrinsic@npm:^1.2.1, get-intrinsic@npm:^1.2.3, get-intrinsic@npm:^1.2.4":
+"get-intrinsic@npm:^1.2.1, get-intrinsic@npm:^1.2.3, get-intrinsic@npm:^1.2.4":
   version: 1.2.4
   resolution: "get-intrinsic@npm:1.2.4"
   dependencies:
@@ -2354,12 +2354,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gopd@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "gopd@npm:1.0.1"
+"gopd@npm:^1.0.1, gopd@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "gopd@npm:1.1.0"
   dependencies:
-    get-intrinsic: ^1.1.3
-  checksum: a5ccfb8806e0917a94e0b3de2af2ea4979c1da920bc381667c260e00e7cafdbe844e2cb9c5bcfef4e5412e8bf73bab837285bc35c7ba73aaaf0134d4583393a6
+    get-intrinsic: ^1.2.4
+  checksum: ed09ffe54ef841e9de35a56f9d249495c1149dc611f05a242c476cc538f13b2228ac1ee3970f9bfca2cadd6f9785efe854419eeef6050e7de3f02fbee9292ad4
   languageName: node
   linkType: hard
 
@@ -2720,12 +2720,14 @@ __metadata:
   linkType: hard
 
 "is-regex@npm:^1.1.4":
-  version: 1.1.4
-  resolution: "is-regex@npm:1.1.4"
+  version: 1.2.0
+  resolution: "is-regex@npm:1.2.0"
   dependencies:
-    call-bind: ^1.0.2
-    has-tostringtag: ^1.0.0
-  checksum: 362399b33535bc8f386d96c45c9feb04cf7f8b41c182f54174c1a45c9abbbe5e31290bbad09a458583ff6bf3b2048672cdb1881b13289569a7c548370856a652
+    call-bind: ^1.0.7
+    gopd: ^1.1.0
+    has-tostringtag: ^1.0.2
+    hasown: ^2.0.2
+  checksum: dd2693d71866850d1276815204a2629d28dc1d24bd56b734e57a39f56b777cd87030d57552e7093d91a2ac331d99af9dba49a0a641fa4e4435d40e944d4dde12
   languageName: node
   linkType: hard
 
@@ -4417,11 +4419,11 @@ __metadata:
   linkType: hard
 
 "ts-api-utils@npm:^1.3.0":
-  version: 1.4.2
-  resolution: "ts-api-utils@npm:1.4.2"
+  version: 1.4.3
+  resolution: "ts-api-utils@npm:1.4.3"
   peerDependencies:
     typescript: ">=4.2.0"
-  checksum: 55ccce01964d1cebb19940b4c2ca713bff0994315be2bd1e04c8c91c7e1de78cf73bbaa61d4e7fa03406bbc523cbd2b5c4098f67c8efbb6c98176cb7f3619346
+  checksum: ea00dee382d19066b2a3d8929f1089888b05fec797e32e7a7004938eda1dccf2e77274ee2afcd4166f53fab9b8d7ee90ebb225a3183f9ba8817d636f688a148d
   languageName: node
   linkType: hard
 
@@ -4640,15 +4642,15 @@ __metadata:
   linkType: hard
 
 "which-typed-array@npm:^1.1.14, which-typed-array@npm:^1.1.15":
-  version: 1.1.15
-  resolution: "which-typed-array@npm:1.1.15"
+  version: 1.1.16
+  resolution: "which-typed-array@npm:1.1.16"
   dependencies:
     available-typed-arrays: ^1.0.7
     call-bind: ^1.0.7
     for-each: ^0.3.3
     gopd: ^1.0.1
     has-tostringtag: ^1.0.2
-  checksum: 65227dcbfadf5677aacc43ec84356d17b5500cb8b8753059bb4397de5cd0c2de681d24e1a7bd575633f976a95f88233abfd6549c2105ef4ebd58af8aa1807c75
+  checksum: 903d398ec234d608011e1df09af6c004e66965bb24d5e1a82856cba0495fa6389ae393d1c9d5411498a9cba8e61b2e39a8e8be7b3005cbeadd317f772b1bdaef
   languageName: node
   linkType: hard
 

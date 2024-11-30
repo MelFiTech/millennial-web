@@ -6,11 +6,14 @@ export default function CTA() {
       <div className="relative w-full h-full">
         {/* Background Image */}
         <Image
-          src="/image.jpg"
+          src="/Image.jpg"
           alt="Modern architectural interior"
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+          quality={85}
           className="object-cover"
           priority
+          unoptimized={false}
         />
         <div className="absolute inset-0 bg-black/50" />
 
