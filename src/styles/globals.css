@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --grid-color: rgba(75, 75, 75, 0.15);
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+    font-family: var(--font-redhat);
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-white hover:text-gray-300 font-medium tracking-wide;
+    font-family: var(--font-redhat);
+  }
+}
+
+@keyframes grid-scroll {
+  0% {
+    background-position: center, 0 0, 0 0;
+  }
+  100% {
+    background-position: center, 0 40px, 0 40px;
+  }
+}
